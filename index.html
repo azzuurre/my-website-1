@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure's Personal Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            transition: background-color 0.3s; /* Smooth transition for background color change */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .video-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .color-picker-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Azure's website </h1>
+        <p>Hello! I'm Azure or you can call me derek i am a destiny 2 player and i love to do dungeons.</p>
+        
+        <!-- Color Picker Section -->
+        <div class="color-picker-container">
+            <label for="background-color-picker">Choose Background Color:</label>
+            <input type="color" id="background-color-picker" value="#A9A9A9">
+        </div>
+
+        <div class="contact-info">
+            <p>my destiny 2 join code:</p>
+            <p>/join Azure#9926</p>
+            <p>/invite Azure#9926</a></p>
+        </div>
+        
+        <div class="video-container">
+            <h2>Watch My Video</h2>
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle the color picker change
+        document.getElementById('background-color-picker').addEventListener('input', function(event) {
+            document.body.style.backgroundColor = event.target.value;
+        });
+    </script>
+</body>
+</html>
